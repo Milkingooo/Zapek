@@ -1,0 +1,155 @@
+/* Определяем блочную модель */
+html {
+ box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+
+/* Убираем стандартное подчёркивание у ссылок */
+a {
+ text-decoration: none;
+}
+
+/* Устанавливаем минимальный размер экрана и добавляем фоновое изображение */
+body {
+ min-height: 100vh;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+}
+
+/* Стилизуем контейнер */
+.container {
+ max-width: 1190px;
+ padding: 0 15px; /* Увеличиваем боковые отступы */
+ margin: 0 auto; /* Центрируем контейнер по горизонтали */
+}
+
+/* Стилизуем шапку сайта */
+.header {
+ padding-top: 30px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+ position: relative;
+ height: 80px;
+}
+
+/* Стилизуем внутренний контейнер шапки */
+.header__inner {
+ display: flex; /* Выстраиваем элементы внутри контейнера в строку */
+ justify-content: space-between; /* Распределяем элементы по ширине контейнера */
+ align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+/* Стилизуем логотип */
+.logo {
+ text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+ font-size: 28px; /* Устанавливаем размер шрифта */
+ font-weight: 900; /* Устанавливаем жирное начертание шрифта */
+ color: #443B33; /* Устанавливаем цвет логотипа */
+}
+
+/* Стилизуем списки меню */
+.menu__list {
+ display: flex; /* Отображаем элементы списка в строку */
+ list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+}
+
+/* Стилизуем пункты меню */
+.menu__list-item {
+ margin-right: 20px; /* Добавляем отступ между пунктами меню */
+}
+
+/* Стилизуем ссылки в меню */
+.menu__list-link {
+ padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+ font-size: 20px; /* Уменьшаем размер шрифта */
+ color: #443B33; /* Устанавливаем цвет ссылок */
+ cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+ transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+}
+
+/* Добавляем стилизацию ссылок в меню при наведении курсора */
+.menu__list-link:hover {
+    color: #7EA574; /* Задаём изменение цвета ссылок при наведении курсора */
+    /* border-bottom: 1px solid #7EA574; */ 
+}
+
+.hello_about {
+    height: 550px;
+    max-width: 1400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hello_about-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hello_about-inner-text {
+    display: block;
+    max-width: 550px;
+}
+
+.hello_about-inner img {
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-transform: uppercase; 
+    font-size: 28px;
+    color: #443B33;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hello_about-inner-text p {
+    font-size: 16px;
+    color: #443B33; 
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hello_about-inner-text ul {
+    padding-left: 50px;
+}
+
+.cta-button {
+            background-color: #a36754;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #8b5547;
+}
+
+
+
+
+.time_list {
+    list-style: none;
+    text-align: center;
+}
+
+.contact_list-item {
+ margin-top: 10px; /* Добавляем отступ между пунктами меню */
+}
+
+.footer {
+    padding-bottom: 20px;
+    vertical-align: bottom;
+}

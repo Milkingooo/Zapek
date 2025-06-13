@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4e1d2;
+            color: #3b2f2f;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #3b2f2f;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .text-block {
+            max-width: 550px;
+        }
+
+        .text-block h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .text-block p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #a36754;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #8b5547;
+        }
+
+        .photo-block img {
+            max-width: 350px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .photo-block img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">ЗАПЁК</div>
+        <nav>
+            <a href="#">Магазин</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Мастер-классы</a>
+            <a href="#">Инструменты</a>
+            <a href="#">О нас</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="text-block">
+            <h1>ПРИВЕТ! МЫ - ГОНЧАРНАЯ МАСТЕРСКАЯ «ЗАПЁК»</h1>
+            <p>
+                Мы создаём уникальные изделия из натуральных материалов, бережно сохраняя старинные традиции русской
+                гончарной культуры.
+                Каждый сосуд, тарелка или декоративная композиция изготавливаются вручную нашими мастерами, впитывая
+                тепло и душу создателя.
+            </p>
+            <button class="cta-button">Посмотреть изделия</button>
+        </div>
+
+        <div class="photo-block">
+            <img src="assets/images/examples/photo1.jpg" alt="Гончар за работой">
+            <!-- Можно заменить на свою фотографию -->
+        </div>
+    </section>
+</body>
+
+</html>
