@@ -72,11 +72,19 @@ body {
  transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
 }
 
+.menu__list-nolink {
+ padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+ font-size: 20px; /* Уменьшаем размер шрифта */
+ color: #443B33; /* Устанавливаем цвет ссылок */
+}
+
 /* Добавляем стилизацию ссылок в меню при наведении курсора */
 .menu__list-link:hover {
     color: #7EA574; /* Задаём изменение цвета ссылок при наведении курсора */
     /* border-bottom: 1px solid #7EA574; */ 
 }
+
+/* Hello */
 
 .hello_about {
     height: 550px;
@@ -137,12 +145,138 @@ h2 {
     background-color: #8b5547;
 }
 
+/* Hello */
 
+/* About Us */
 
+.why_we {
+    height: 300px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why_we-inner {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.why_we-inner h2 {
+    /* margin-left: 60px; */
+    text-align: center;
+}
+
+.about_list {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.about_list-item {
+    margin-right: 20px; /* Добавляем отступ между пунктами меню */
+    /* border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); */
+    font-weight: 500;
+    width: 400px;
+}
+
+.about_list-item img {
+    max-width: 100px;
+    border-radius: 16px;
+}
+
+/* About Us */
+
+/* Carousel */
+.gallery {
+    position: relative;
+    height: 650px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery h2 {
+    text-align: center;
+}
+
+.slide {
+    scroll-snap-align: start;
+}
+
+.carousel {
+    margin-top: 50px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 16px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 5px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #f2bf93;
+  background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, .25) 50%,
+                    rgba(255, 255, 255, .25) 75%,
+                    transparent 75%,
+                    transparent);
+    border-radius: 5px;
+}
+
+.carousel img {
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Carousel */
+
+/* Feedback */
+
+.feedback {
+    height: auto;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-inner h2 {
+    text-align: center;
+}
+
+.feedback-inner p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Feedback */
+
+/* Footer */
 
 .time_list {
     list-style: none;
     text-align: center;
+    width: 300px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contact_list-item {
@@ -152,4 +286,9 @@ h2 {
 .footer {
     padding-bottom: 20px;
     vertical-align: bottom;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* Footer */
