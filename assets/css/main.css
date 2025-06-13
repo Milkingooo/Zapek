@@ -171,6 +171,7 @@ h2 {
     list-style: none;
     display: flex;
     text-align: center;
+    margin-top: 50px;
 }
 
 .about_list-item {
