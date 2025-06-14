@@ -1,130 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f4e1d2;
-            color: #3b2f2f;
-        }
+    <link rel="icon" href="assets/images/logo.svg" sizes="32x32" type="image/x-icon">
+    <title>Запёк - Магазин</title>
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #3b2f2f;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .main {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 60px 40px;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .text-block {
-            max-width: 550px;
-        }
-
-        .text-block h1 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .text-block p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        .cta-button {
-            background-color: #a36754;
-            color: white;
-            padding: 12px 24px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #8b5547;
-        }
-
-        .photo-block img {
-            max-width: 350px;
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        }
-
-        @media (max-width: 768px) {
-            .main {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .photo-block img {
-                max-width: 90%;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Подключаем нормализацию стилей для единообразного отображения страницы в разных браузерах. Ссылка для подключения: https://cdnjs.com/libraries/normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- Подключаем файл со стилями -->
+    <link rel="stylesheet" href="assets/css/collecion.css" />
 </head>
 
-<body>
-    <header>
-        <div class="logo">ЗАПЁК</div>
-        <nav>
-            <a href="#">Магазин</a>
-            <a href="#">Портфолио</a>
-            <a href="#">Мастер-классы</a>
-            <a href="#">Инструменты</a>
-            <a href="#">О нас</a>
-        </nav>
+<body bgcolor="#EEDCCB">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">Запёк</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="store.html">Магазин</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="collection.html">Портфолио</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Мастер-классы </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Инструменты</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section class="main">
-        <div class="text-block">
-            <h1>ПРИВЕТ! МЫ - ГОНЧАРНАЯ МАСТЕРСКАЯ «ЗАПЁК»</h1>
-            <p>
-                Мы создаём уникальные изделия из натуральных материалов, бережно сохраняя старинные традиции русской
-                гончарной культуры.
-                Каждый сосуд, тарелка или декоративная композиция изготавливаются вручную нашими мастерами, впитывая
-                тепло и душу создателя.
-            </p>
-            <button class="cta-button">Посмотреть изделия</button>
+    <main>
+        <div class="gallery">
+            <div class="carousel">
+                <div class="slide"><img src="assets/images/examples/photo3.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo6.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo7.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo8.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo9.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo10.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo1.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo2.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo4.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo5.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo11.jpg"></div>
+                <div class="slide"><img src="assets/images/examples/photo12.jpg"></div>
+            </div>
         </div>
-
-        <div class="photo-block">
-            <img src="assets/images/examples/photo1.jpg" alt="Гончар за работой">
-            <!-- Можно заменить на свою фотографию -->
-        </div>
-    </section>
+    </main>
 </body>
 
 </html>
