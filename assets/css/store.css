@@ -1,0 +1,169 @@
+/* Определяем блочную модель */
+html {
+ box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+
+/* Убираем стандартное подчёркивание у ссылок */
+a {
+ text-decoration: none;
+}
+
+/* Устанавливаем минимальный размер экрана и добавляем фоновое изображение */
+body {
+ min-height: 100vh;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+}
+
+/* Стилизуем контейнер */
+.container {
+ max-width: 1190px;
+ padding: 0 15px; /* Увеличиваем боковые отступы */
+ margin: 0 auto; /* Центрируем контейнер по горизонтали */
+}
+
+/* Стилизуем шапку сайта */
+.header {
+ padding-top: 30px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+ position: relative;
+ height: 80px;
+}
+
+/* Стилизуем внутренний контейнер шапки */
+.header__inner {
+ display: flex; /* Выстраиваем элементы внутри контейнера в строку */
+ justify-content: space-between; /* Распределяем элементы по ширине контейнера */
+ align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+/* Стилизуем логотип */
+.logo {
+ text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+ font-size: 28px; /* Устанавливаем размер шрифта */
+ font-weight: 900; /* Устанавливаем жирное начертание шрифта */
+ color: #443B33; /* Устанавливаем цвет логотипа */
+}
+
+/* Стилизуем списки меню */
+.menu__list {
+ display: flex; /* Отображаем элементы списка в строку */
+ list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+}
+
+/* Стилизуем пункты меню */
+.menu__list-item {
+ margin-right: 20px; /* Добавляем отступ между пунктами меню */
+}
+
+/* Стилизуем ссылки в меню */
+.menu__list-link {
+ padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+ font-size: 20px; /* Уменьшаем размер шрифта */
+ color: #443B33; /* Устанавливаем цвет ссылок */
+ cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+ transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+}
+
+.menu__list-nolink {
+ padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+ font-size: 20px; /* Уменьшаем размер шрифта */
+ color: #443B33; /* Устанавливаем цвет ссылок */
+}
+
+/* Добавляем стилизацию ссылок в меню при наведении курсора */
+.menu__list-link:hover {
+    color: #7EA574; /* Задаём изменение цвета ссылок при наведении курсора */
+    /* border-bottom: 1px solid #7EA574; */ 
+}
+
+main {
+    margin-top: 50px; /* Оставляем пространство над основным контентом равное высоте шапки + отступ */
+}
+
+/* Card */
+
+.item-place {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.item-place-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 580px;
+    width: 360px;
+    background-color: #EEDCCB;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+.card-text {
+    display: block;
+}
+
+.card-info-list {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.card-info-item {
+    height: 40px;
+    margin-bottom: 10px; 
+    font-size: 20px; /* Устанавливаем размер шрифта */
+    font-weight: 700; /* Устанавливаем жирное начертание шрифта */
+    color: #443B33;
+}
+
+.card-buttons-list {
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.card-button {
+    background-color: #a36754;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            margin-right: 10px;
+}
+
+.card-button:hover {
+    background-color: #8b5547;
+}
