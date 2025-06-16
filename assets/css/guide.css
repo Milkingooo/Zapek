@@ -1,3 +1,31 @@
+/* Footer */
+
+.time_list {
+    list-style: none;
+    text-align: center;
+    width: 300px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_list-item {
+ margin-top: 10px; /* Добавляем отступ между пунктами меню */
+}
+
+.footer {
+    padding-bottom: 20px;
+    vertical-align: bottom;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+
 /* Определяем блочную модель */
 html {
  box-sizing: border-box;
@@ -93,65 +121,100 @@ body {
     /* border-bottom: 1px solid #7EA574; */ 
 }
 
+h2 {
+    text-transform: uppercase; 
+    font-size: 28px;
+    color: #443B33;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-transform: uppercase; 
+    font-size: 24px;
+    color: #443B33;
+    font-weight: 700;
+}
+
 main {
     margin-top: 50px; /* Оставляем пространство над основным контентом равное высоте шапки + отступ */
 }
 
-/* Carousel */
-.gallery {
-    position: relative;
+.tools-place {
+    /* max-width: 1400px; */
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.slide {
-    scroll-snap-align: start;
-    margin-bottom: 20px;
-}
 
-.carousel {
-    margin-top: 50px;
-    display: flex;
-    border-radius: 16px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel img {
-    height: 500px;
-    width: 400px;
-    margin: 0 16px 6px 16px;
-    border-radius: 16px;
-    object-fit: cover;
-    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
-}
-
-
-/* Footer */
-
-.time_list {
-    list-style: none;
-    text-align: center;
-    width: 300px;
-}
-
-.footer-inner {
-    display: flex;
+.tools-place-inner {
+    display: block;
     justify-content: space-around;
     align-items: center;
 }
 
-.contact_list-item {
- margin-top: 10px; /* Добавляем отступ между пунктами меню */
+.tool-section h2 {
+    text-align: center;
 }
 
-.footer {
-    padding-bottom: 20px;
-    vertical-align: bottom;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+.img-tools {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-/* Footer */
+h3 {
+    text-align: center;
+}
+
+.tool-section p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.tool {
+    height: 700px;
+    width: 400px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 30px;
+}
+
+.img-tools {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-tools img {
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sovet {
+    height: 300px;
+    width: 450px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background-color: #EEDCCB;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.sovet h3 {
+    height: 50px;
+}

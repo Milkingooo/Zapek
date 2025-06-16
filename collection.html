@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/logo.svg" sizes="32x32" type="image/x-icon">
-    <title>Запёк - Магазин</title>
+    <title>Портфолио</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,16 +28,16 @@
                             <a class="menu__list-link" href="store.html">Магазин</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="collection.html">Портфолио</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="masterclass.html">Мастер-классы </a>
+                            <a class="menu__list-link-selected" href="collection.html">Портфолио</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="guide.html">Инструменты</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="masterclass.html">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -63,6 +63,69 @@
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <hr style="border: 0; height: 2px; background-color: #443B33;">
+        <div class="container">
+            <div class="footer-inner">
+                <ul class="time_list">
+                    <li class="contact_list-item">
+                        <a class="menu__list-nolink">Режим работы</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-nolink">С 9:00 до 18:00</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-nolink">Перерыв</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-nolink">С 12:00 до 13:00</a>
+                    </li>
+                </ul>
+
+                <img src="assets/images/logo.svg" height="120" width="120">
+
+                <ul class="time_list">
+                    <li class="contact_list-item">
+                        <a class="menu__list-nolink">Контакты</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-link" href="tel:+78005553535">8 (800) 555-35-35</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-link" href="https://t.me/zapekmikop">Telegram</a>
+                    </li>
+                    <li class="contact_list-item">
+                        <a class="menu__list-link" onclick="window.myDialog.showModal()">Источники</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <dialog id="myDialog">🖖 Вот источники которые я использовал:
+        <ul style="list-style-type: none;">
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://krd.kolokol.school/" target="_blank">Гончарная школа
+                    Колокол</a>
+            </li>
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://unsplash.com/" target="_blank">Unsplash.com</a>
+            </li>
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://ru.freepik.com/" target="_blank">Freepik.com</a>
+            </li>
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://bulochnaya.fun/" target="_blank">Bulochnaya.fun</a>
+            </li>
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://zarny.ru/" target="_blank">Зарни Ань</a>
+            </li>
+            <li class="contact_list-item">
+                <a class="menu__list-link" href="https://ceramicrabbit.ru/" target="_blank">Гончарная школа
+                    «Rabbit Hole»</a>
+            </li>
+        </ul>
+    </dialog>
 </body>
 
 </html>

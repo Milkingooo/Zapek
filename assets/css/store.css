@@ -78,6 +78,15 @@ body {
  color: #443B33; /* Устанавливаем цвет ссылок */
 }
 
+.menu__list-link-selected {
+    padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    color: #7EA574; /* Устанавливаем цвет ссылок */
+    border-bottom: 1px solid #7EA574;
+    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+}
+
 /* Добавляем стилизацию ссылок в меню при наведении курсора */
 .menu__list-link:hover {
     color: #7EA574; /* Задаём изменение цвета ссылок при наведении курсора */
@@ -189,3 +198,31 @@ h2 {
 .card-button:hover {
     background-color: #8b5547;
 }
+
+/* Footer */
+
+.time_list {
+    list-style: none;
+    text-align: center;
+    width: 300px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_list-item {
+ margin-top: 10px; /* Добавляем отступ между пунктами меню */
+}
+
+.footer {
+    padding-bottom: 20px;
+    vertical-align: bottom;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
