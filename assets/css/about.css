@@ -154,15 +154,8 @@ h2 {
     text-transform: uppercase;
     font-size: 28px;
     color: #443B33;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 20px;
-}
-
-h3 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: #443B33;
-    font-weight: 700;
 }
 
 main {
@@ -175,6 +168,7 @@ main {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .tools-place-inner {
@@ -183,32 +177,39 @@ main {
     align-items: center;
 }
 
-.tool-section h2 {
+.about-us-inner-text h2 {
     text-align: center;
 }
 
-.img-tools {
-    margin-top: 50px;
-    margin-bottom: 30px;
+.about-us-inner-text {
+    width: 50%;
 }
 
-h3 {
-    text-align: center;
+.about-us-inner-text p {
+    font-size: 20px;
 }
 
-.tool-section p {
-    text-align: center;
-    font-size: 22px;
-}
-
-.tool {
-    height: 700px;
-    width: 400px;
-    display: block;
-    justify-content: center;
+.tool-section {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    margin-right: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.tool-section img {
+    height: 400px;
+    border-radius: 16px;
+    object-fit: cover;
     border-radius: 30px;
+    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: justify;
+    color: #443B33;
 }
 
 .img-tools {
@@ -218,27 +219,14 @@ h3 {
     flex-wrap: wrap;
 }
 
-.img-tools img {
-    height: 500px;
-    width: 100%;
-    border-radius: 16px;
-    object-fit: cover;
-    border-radius: 30px;
-    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
-}
-
-p {
-    font-size: 20px;
-    text-align: center;
-}
-
 .sovet {
-    height: 300px;
+    height: 200px;
     width: 450px;
     display: block;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    margin-top: 10px;
     background-color: #EEDCCB;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -246,5 +234,14 @@ p {
 }
 
 .sovet h3 {
-    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: #443B33;
+}
+
+.contact_list {
+    display: block;
+    list-style: none;
+    text-align: center;
 }
