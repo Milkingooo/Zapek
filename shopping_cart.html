@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/images/logo.svg" sizes="32x32" type="image/x-icon">
-    <title>Портфолио</title>
+    <title>Главная</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
     <!-- Подключаем нормализацию стилей для единообразного отображения страницы в разных браузерах. Ссылка для подключения: https://cdnjs.com/libraries/normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- Подключаем файл со стилями -->
-    <link rel="stylesheet" href="assets/css/collecion.css" />
+    <link rel="stylesheet" href="assets/css/cart.css" />
 </head>
 
 <body bgcolor="#EEDCCB">
@@ -28,7 +28,7 @@
                             <a class="menu__list-link" href="store.html">Магазин</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link-selected" href="collection.html">Портфолио</a>
+                            <a class="menu__list-link" href="collection.html">Портфолио</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="guide.html">Инструменты</a>
@@ -45,24 +45,106 @@
         </div>
     </header>
 
-    <main>
-        <div class="gallery">
-            <div class="carousel">
-                <div class="slide"><img src="assets/images/examples/photo3.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo6.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo7.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo8.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo9.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo10.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo1.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo2.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo4.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo5.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo11.jpg"></div>
-                <div class="slide"><img src="assets/images/examples/photo12.jpg"></div>
+    <div class="product-list">
+        <div class="pr-l-inner">
+            <div class="product">
+                <div class="left">
+                    <img src="assets/images/examples/photo9.jpg">
+                    <div class="pr-text">
+                        <h3>Чашка-кошка</h3>
+                        <h3>1700 р. x 2</h3>
+                        <h3>3400 p.</h3>
+                    </div>
+                </div>
+                <a class="menu__list-link">Удалить</a>
+            </div>
+            <hr>
+            <div class="product">
+                <div class="left">
+                    <img src="assets/images/examples/photo8.jpg">
+                    <div class="pr-text">
+                        <h3>Мисочка медуза</h3>
+                        <h3>2000 р. x 1</h3>
+                        <h3>2000 p.</h3>
+                    </div>
+                </div>
+                <a class="menu__list-link">Удалить</a>
+            </div>
+            <hr>
+            <div class="product">
+                <div class="left">
+                    <img src="assets/images/examples/photo17.jpg">
+                    <div class="pr-text">
+                        <h3>Тарелочка</h3>
+                        <h3>3500 р. x 2</h3>
+                        <h3>7000 p.</h3>
+                    </div>
+                </div>
+                <a class="menu__list-link">Удалить</a>
+            </div>
+            <hr>
+            <div class="product">
+                <div class="left">
+                    <img src="assets/images/examples/photo6.jpg">
+                    <div class="pr-text">
+                        <h3>Мастер-класс «Горшочки с рисунками»</h3>
+                        <h3>2500 р. x 1</h3>
+                        <h3>2500 p.</h3>
+                    </div>
+                </div>
+                <a class="menu__list-link">Удалить</a>
+            </div>
+
+            <div class="total-pr">
+                <hr>
+                <div class="no-line">
+                    <h3>3400 p.</h3>
+                </div>
+                <hr>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-field">
+                            <label for="name" class="f-l-label">
+                                <h3>Имя:</h3>
+                            </label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="f-l-label">
+                                <h3>Почта:</h3>
+                            </label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="phone" class="f-l-label">
+                                <h3>Телефон:</h3>
+                            </label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-field">
+                            <label for="address" class="f-l-label">
+                                <h3>Адрес:</h3>
+                            </label>
+                            <input type="text" name="address">
+                        </div>
+                        <div class="form-field">
+                            <label for="pay" class="f-l-label">
+                                <h3>Способ оплаты:</h3>
+                            </label>
+                            <select>
+                                <option>СБП</option>
+                                <option>Картой</option>
+                                <option>При получении</option>
+                            </select>
+                        </div>
+                        <button type="submit">Продолжить</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
+
 
     <footer class="footer">
         <hr style="border: 0; height: 2px; background-color: #443B33;">
