@@ -239,6 +239,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    margin-top: 30px;
     background-color: #EEDCCB;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
