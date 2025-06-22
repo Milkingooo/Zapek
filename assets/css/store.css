@@ -1,104 +1,133 @@
 /* Определяем блочную модель */
 html {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
- box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 /* Убираем стандартное подчёркивание у ссылок */
 a {
- text-decoration: none;
+    text-decoration: none;
 }
 
 /* Устанавливаем минимальный размер экрана и добавляем фоновое изображение */
 body {
- min-height: 100vh;
- background-repeat: no-repeat;
- background-position: center center;
- background-size: cover;
- font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    /* Используем шрифт Montserrat */
 }
 
 /* Стилизуем контейнер */
 .container {
- max-width: 1190px;
- padding: 0 15px; /* Увеличиваем боковые отступы */
- margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    max-width: 1190px;
+    padding: 0 15px;
+    /* Увеличиваем боковые отступы */
+    margin: 0 auto;
+    /* Центрируем контейнер по горизонтали */
 }
 
 /* Стилизуем шапку сайта */
 .header {
- padding-top: 30px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
- position: relative;
- height: 80px;
+    padding-top: 30px;
+    /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+    position: relative;
+    height: 80px;
 }
 
 /* Стилизуем внутренний контейнер шапки */
 .header__inner {
- display: flex; /* Выстраиваем элементы внутри контейнера в строку */
- justify-content: space-between; /* Распределяем элементы по ширине контейнера */
- align-items: center; /* Выравниваем элементы по вертикали */
+    display: flex;
+    /* Выстраиваем элементы внутри контейнера в строку */
+    justify-content: space-between;
+    /* Распределяем элементы по ширине контейнера */
+    align-items: center;
+    /* Выравниваем элементы по вертикали */
 }
 
 /* Стилизуем логотип */
 .logo {
- text-transform: uppercase; /* Преобразуем текст в верхний регистр */
- font-size: 28px; /* Устанавливаем размер шрифта */
- font-weight: 900; /* Устанавливаем жирное начертание шрифта */
- color: #443B33; /* Устанавливаем цвет логотипа */
+    text-transform: uppercase;
+    /* Преобразуем текст в верхний регистр */
+    font-size: 28px;
+    /* Устанавливаем размер шрифта */
+    font-weight: 900;
+    /* Устанавливаем жирное начертание шрифта */
+    color: #443B33;
+    /* Устанавливаем цвет логотипа */
 }
 
 /* Стилизуем списки меню */
 .menu__list {
- display: flex; /* Отображаем элементы списка в строку */
- list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+    display: flex;
+    /* Отображаем элементы списка в строку */
+    list-style: none;
+    /* Убираем стандартные маркеры (чёрные точки) */
 }
 
 /* Стилизуем пункты меню */
 .menu__list-item {
- margin-right: 20px; /* Добавляем отступ между пунктами меню */
+    margin-right: 20px;
+    /* Добавляем отступ между пунктами меню */
 }
 
 /* Стилизуем ссылки в меню */
 .menu__list-link {
- padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
- font-size: 20px; /* Уменьшаем размер шрифта */
- color: #443B33; /* Устанавливаем цвет ссылок */
- cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
- transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+    padding: 10px 20px;
+    /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px;
+    /* Уменьшаем размер шрифта */
+    color: #443B33;
+    /* Устанавливаем цвет ссылок */
+    cursor: pointer;
+    /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s;
+    /* Добавляем плавное изменение стилей при наведении */
 }
 
 .menu__list-nolink {
- padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
- font-size: 20px; /* Уменьшаем размер шрифта */
- color: #443B33; /* Устанавливаем цвет ссылок */
+    padding: 10px 20px;
+    /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px;
+    /* Уменьшаем размер шрифта */
+    color: #443B33;
+    /* Устанавливаем цвет ссылок */
 }
 
 .menu__list-link-selected {
-    padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
-    font-size: 20px; /* Уменьшаем размер шрифта */
-    color: #7EA574; /* Устанавливаем цвет ссылок */
+    padding: 10px 20px;
+    /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px;
+    /* Уменьшаем размер шрифта */
+    color: #7EA574;
+    /* Устанавливаем цвет ссылок */
     border-bottom: 1px solid #7EA574;
-    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
-    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+    cursor: pointer;
+    /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s;
+    /* Добавляем плавное изменение стилей при наведении */
 }
 
 /* Добавляем стилизацию ссылок в меню при наведении курсора */
 .menu__list-link:hover {
-    color: #7EA574; /* Задаём изменение цвета ссылок при наведении курсора */
-    /* border-bottom: 1px solid #7EA574; */ 
+    color: #7EA574;
+    /* Задаём изменение цвета ссылок при наведении курсора */
+    /* border-bottom: 1px solid #7EA574; */
 }
 
 main {
-    margin-top: 50px; /* Оставляем пространство над основным контентом равное высоте шапки + отступ */
+    margin-top: 50px;
+    /* Оставляем пространство над основным контентом равное высоте шапки + отступ */
 }
 
 h2 {
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: 38px;
     color: #443B33;
     font-weight: 700;
@@ -169,9 +198,11 @@ h2 {
 
 .card-info-item {
     height: 45px;
-    margin-bottom: 10px; 
-    font-size: 20px; /* Устанавливаем размер шрифта */
-    font-weight: 700; /* Устанавливаем жирное начертание шрифта */
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* Устанавливаем размер шрифта */
+    font-weight: 700;
+    /* Устанавливаем жирное начертание шрифта */
     color: #443B33;
 }
 
@@ -185,14 +216,14 @@ h2 {
 
 .card-button {
     background-color: #a36754;
-            color: white;
-            padding: 12px 24px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s ease;
-            margin-right: 10px;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right: 10px;
 }
 
 .card-button:hover {
@@ -214,7 +245,8 @@ h2 {
 }
 
 .contact_list-item {
- margin-top: 10px; /* Добавляем отступ между пунктами меню */
+    margin-top: 10px;
+    /* Добавляем отступ между пунктами меню */
 }
 
 .footer {
@@ -226,3 +258,100 @@ h2 {
 }
 
 /* Footer */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    /* Логотип */
+    .logo {
+        font-size: 24px;
+    }
+
+    .header__inner {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu__list {
+        flex-wrap: wrap;
+    }
+
+    /* Меню скрыто, кнопка меню появляется */
+    .menu__list-link {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Контакты */
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time_list {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hello_about-inner-text {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .card {
+        height: 450px;
+        width: calc(100% - 30px)/2;
+    }
+
+    .card img {
+        height: 100px;
+    }
+
+    .card-info-item {
+        font-size: 16px;
+    }
+
+    .card-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 380px;
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card-info-item {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .card-info-list {
+        padding-left: 1rem;
+    }
+
+    .card-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
