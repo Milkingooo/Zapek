@@ -38,7 +38,7 @@ body {
     padding-top: 30px;
     /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
     position: relative;
-    height: 80px;
+    height: auto;
 }
 
 /* Стилизуем внутренний контейнер шапки */
@@ -200,6 +200,10 @@ main {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .menu__list-item {
+        margin: 10px;
     }
 
     .menu__list {

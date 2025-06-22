@@ -67,7 +67,7 @@ body {
     padding-top: 30px;
     /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
     position: relative;
-    height: 80px;
+    height: auto;
 }
 
 /* Стилизуем внутренний контейнер шапки */
@@ -292,6 +292,10 @@ select {
         text-align: center;
     }
 
+    .menu__list-item {
+        margin: 10px;
+    }
+
     .menu__list {
         flex-wrap: wrap;
     }
@@ -319,6 +323,82 @@ select {
         text-align: center;
         max-width: 100%;
         padding: 1.5rem;
+    }
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .product .menu__list-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .product-list {
+        max-width: 100%;
+        margin: 15px;
+    }
+
+    .no-line {
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+
+    .contact-form button {
+        padding: 12px 24px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contact-form input {
+        height: 2.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        border-radius: 0.3rem;
+        margin: 0.3rem 0 1rem 0;
+        background-color: #f6f6f6;
+    }
+
+    .form-field {
+        display: flex;
+        align-items: center;
+    }
+
+    .f-l-label {
+        width: 170px;
+    }
+
+    .f-l-label h3 {
+        text-align: center;
+    }
+
+    select {
+        width: 100%;
+        height: 40px;
+        border: none;
+        box-shadow: none;
+        border-radius: 0.3rem;
+        margin: 0.3rem 0 1rem 0;
+        background-color: #f6f6f6;
     }
 
 }
