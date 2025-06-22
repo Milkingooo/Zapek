@@ -249,3 +249,55 @@ p {
 .sovet h3 {
     height: 50px;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    /* Логотип */
+    .logo {
+        font-size: 24px;
+    }
+
+    .header__inner {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu__list {
+        flex-wrap: wrap;
+    }
+
+    /* Меню скрыто, кнопка меню появляется */
+    .menu__list-link {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Контакты */
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .time_list {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hello_about-inner-text {
+        display: block;
+        text-align: center;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
