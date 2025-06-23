@@ -164,7 +164,7 @@ h2 {
 }
 
 .card {
-    height: 580px;
+    height: 600px;
     width: 360px;
     background-color: #EEDCCB;
     border-radius: 30px;
@@ -378,5 +378,6 @@ h2 {
     .card-button {
         font-size: 14px;
         padding: 8px 16px;
+        text-align: center;
     }
 }
