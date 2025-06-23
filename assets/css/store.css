@@ -197,9 +197,10 @@ h2 {
 }
 
 .card-info-item {
-    height: 45px;
+    height: 40px;
     margin-bottom: 10px;
     font-size: 20px;
+    text-overflow: ellipsis;
     /* Устанавливаем размер шрифта */
     font-weight: 700;
     /* Устанавливаем жирное начертание шрифта */
