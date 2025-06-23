@@ -165,7 +165,7 @@ main {
 
 .tools-place {
     /* max-width: 1400px; */
-    max-width: 100%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -173,7 +173,7 @@ main {
 
 .tools-place-inner {
     display: block;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
