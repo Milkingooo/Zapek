@@ -196,14 +196,17 @@ h2 {
     margin-left: 0px;
 }
 
-.card-info-item {
+.card-info-list li {
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-info-item {
     font-size: 20px;
     text-overflow: ellipsis;
     /* Устанавливаем размер шрифта */
     font-weight: 700;
-    /* Устанавливаем жирное начертание шрифта */
+    /* Устанавливаем жирное на  чертание шрифта */
     color: #443B33;
 }
 
@@ -225,6 +228,7 @@ h2 {
     cursor: pointer;
     transition: 0.3s ease;
     margin-right: 10px;
+    
 }
 
 .card-button:hover {
