@@ -201,7 +201,7 @@ h2 {
 
 .why_we-inner {
     display: block;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -215,6 +215,7 @@ h2 {
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
     padding-left: 0;
 }
