@@ -193,7 +193,7 @@ h2 {
 .why_we {
     height: auto;
     /* max-width: 1400px; */
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -201,7 +201,7 @@ h2 {
 
 .why_we-inner {
     display: block;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
