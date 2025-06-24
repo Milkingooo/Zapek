@@ -255,13 +255,6 @@ p {
         font-size: 24px;
     }
 
-    .header__inner {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     .menu__list-item {
         margin: 10px;
     }
