@@ -262,6 +262,13 @@ h2 {
     margin-right: auto;
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #443B33;
+}
+
 /* Footer */
 
 /* Mobile styles */

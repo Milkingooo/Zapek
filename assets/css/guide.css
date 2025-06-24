@@ -251,6 +251,13 @@ p {
     height: 50px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #443B33;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
 
