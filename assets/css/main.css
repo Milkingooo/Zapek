@@ -257,9 +257,10 @@ h2 {
     margin-top: 50px;
     display: flex;
     scroll-behavior: smooth;
-    overflow: auto;
-    scroll-snap-type: x proximity;
-    border-radius: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    gap: 16px;
     align-items: center;
 }
 
@@ -288,11 +289,11 @@ h2 {
 .carousel img {
     height: 500px;
     width: 400px;
-    margin: 0 16px 6px 16px;
     border-radius: 16px;
     object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: none;
 }
+
 
 
 /* Carousel */
