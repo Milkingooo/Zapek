@@ -347,19 +347,19 @@ h2 {
 
 /* Footer */
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #443B33;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
 
     /* Логотип */
     .logo {
         font-size: 24px;
-    }
-
-    .header__inner {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .menu__list-item {
@@ -461,6 +461,55 @@ h2 {
         max-width: 100%;
         padding: 1.5rem;
     }
+
+    /* Additional*/
+    .menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 200px;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .menu__list-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu__list-link {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
 }
 
 /* Smaller screens */

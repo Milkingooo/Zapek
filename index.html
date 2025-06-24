@@ -24,7 +24,10 @@
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="index.html">Запёк</a>
-                <nav class="menu">
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Иконка гамбургера -->
+                </div>
+                <nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="store.html">Магазин</a>
@@ -46,6 +49,15 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 
     <div class="hello_about">
         <div class="hello_about-inner">
