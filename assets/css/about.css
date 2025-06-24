@@ -254,6 +254,15 @@ p {
     color: #443B33;
 }
 
+.contact_list-item-img {
+    height: 380px;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 16px 25px 3px rgba(0, 0, 0, 0.15);
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
 
@@ -371,7 +380,7 @@ p {
         display: block;
     }
 
-    .tool-section img {
+    .contact_list-item-img {
         height: 380px;
         width: 100%;
         border-radius: 16px;
