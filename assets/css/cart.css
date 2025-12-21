@@ -277,6 +277,92 @@ select {
     background-color: #f6f6f6;
 }
 
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    min-width: 150px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #EEDCCB;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #7EA574;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.quantity-btn:hover {
+    background: #7EA574;
+    transform: scale(1.05);
+}
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity-btn.decrease-btn {
+    background: #7EA574;
+}
+
+.quantity-btn.decrease-btn:hover {
+    background: #7EA574;
+}
+
+.quantity-display {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    min-width: 30px;
+    text-align: center;
+}
+
+.remove-btn {
+    background: #EEDCCB;
+    color: #7EA574 !important;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: #EEDCCB;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn:active {
+    transform: translateY(0);
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
 
@@ -399,6 +485,20 @@ select {
         border-radius: 0.3rem;
         margin: 0.3rem 0 1rem 0;
         background-color: #f6f6f6;
+    }
+
+    .product-actions {
+        align-items: center;
+        width: 100%;
+    }
+
+    .quantity-controls {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .remove-btn {
+        width: 100%;
     }
 
 }
