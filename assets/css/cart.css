@@ -285,6 +285,7 @@ select {
     min-width: 150px;
 }
 
+/* Дизайн кнопок управления */
 .quantity-controls {
     display: flex;
     align-items: center;
