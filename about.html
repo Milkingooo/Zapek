@@ -22,7 +22,10 @@
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="index.html">Запёк</a>
-                <nav class="menu">
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Иконка гамбургера -->
+                </div>
+                <nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="store.html">Магазин</a>
@@ -44,6 +47,15 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 
     <main>
         <div class="tools-place">
@@ -103,7 +115,7 @@
                         <h2>🤝 Наши контакты:</h2>
                         <ul class="contact_list">
                             <li class="contact_list-item">
-                                <a class="menu__list-nolink">ул. Твичевских, д.42</a>
+                                <a class="menu__list-nolink">ул. Джотаро Токийского, д.42</a>
                             </li>
                             <li class="contact_list-item">
                                 <a class="menu__list-link" href="tel:+78005553535">8 (800) 555-35-35</a>
@@ -117,7 +129,11 @@
                             <li class="contact_list-item">
                                 <a class="menu__list-link">Трушин Максим ИС-42</a>
                             </li>
+                            <li class="contact_list-item-img">
+                                <img src="assets/images/qrqrqr.png">
+                            </li>
                         </ul>
+
                     </div>
                 </div>
 

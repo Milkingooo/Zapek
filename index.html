@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- Подключаем файл со стилями -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body bgcolor="#EEDCCB">
@@ -23,7 +24,10 @@
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="index.html">Запёк</a>
-                <nav class="menu">
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Иконка гамбургера -->
+                </div>
+                <nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="store.html">Магазин</a>
@@ -45,6 +49,15 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 
     <div class="hello_about">
         <div class="hello_about-inner">
@@ -106,8 +119,6 @@
             <div class="slide"><img src="assets/images/examples/photo12.jpg"></div>
             <div class="slide"><img src="assets/images/examples/photo13.jpg"></div>
             <div class="slide"><img src="assets/images/examples/photo11.jpg"></div>
-            <div class="slide"><button class="cta-button" onclick="window.location.href = 'collection.html'">Посмотреть
-                    все</button></div>
         </div>
     </div>
 
@@ -123,6 +134,7 @@
         <div class="feedback-inner">
             <H2>Заинтересовались каким-то изделием или хотите задать вопрос?</H2>
             <p>Свяжитесь с нами по телефону или через наши соц. сети</p>
+            <p><a class="fa fa-telegram" href="https://t.me/zapekmikop" style="font-size:48px; color: #443B33;"></a></p>
         </div>
     </div>
 
