@@ -238,60 +238,142 @@ h2 {
 
 /* Carousel */
 .gallery {
-    position: relative;
-    height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
-.gallery h2 {
+.gallery-title {
     text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.slide {
-    scroll-snap-align: start;
+.gallery-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    font-weight: 300;
 }
 
-.carousel {
-    margin-top: 50px;
-    display: flex;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    gap: 16px;
-    align-items: center;
+/* Сетка фотографий */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
 }
 
-.carousel::-webkit-scrollbar {
-    width: 10px;
+.photo-frame {
+    position: relative;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-.carousel::-webkit-scrollbar-track {
-    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-    background-color: #f9f9fd;
-    border-radius: 5px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-    background-color: #f2bf93;
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .25) 25%,
-            transparent 25%,
-            transparent 50%,
-            rgba(255, 255, 255, .25) 50%,
-            rgba(255, 255, 255, .25) 75%,
-            transparent 75%,
-            transparent);
-    border-radius: 5px;
-}
-
-.carousel img {
-    height: 500px;
-    width: 400px;
-    border-radius: 16px;
+.photo-frame img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    box-shadow: none;
+    transition: transform 0.6s ease;
+}
+
+
+/* Уникальные формы для каждой фотографии */
+.photo-1 {
+    border-radius: 60% 40% 40% 60% / 50% 50% 50% 50%;
+}
+
+.photo-2 {
+    border-radius: 40% 60% 60% 40% / 50% 50% 50% 50%;
+}
+
+.photo-3 {
+    border-radius: 50% 50% 20% 80% / 80% 20% 80% 20%;
+}
+
+.photo-4 {
+    border-radius: 30% 70% 70% 30% / 30% 50% 50% 70%;
+}
+
+.photo-5 {
+    border-radius: 80% 20% 50% 50% / 50% 50% 50% 50%;
+}
+
+.photo-6 {
+    border-radius: 30% 20% 60% 40% / 40% 30% 90% 40%;
+}
+
+/* Декоративный эффект рамки */
+.frame-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid white;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-frame:hover .frame-effect {
+    opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .gallery {
+        margin: 50px auto;
+        padding: 0 15px;
+    }
+    
+    .gallery-title {
+        font-size: 2rem;
+    }
+    
+    .photo-grid {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .photo-frame {
+        height: 280px;
+    }
+    
+    /* Более простые формы на мобильных */
+    .photo-1, .photo-2, .photo-3, .photo-4, .photo-5 {
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-title {
+        font-size: 1.8rem;
+    }
+    
+    .gallery-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .photo-frame {
+        height: 250px;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 
