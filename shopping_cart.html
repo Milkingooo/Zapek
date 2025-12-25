@@ -16,17 +16,14 @@
     <!-- Подключаем файл со стилями -->
     <link rel="stylesheet" href="assets/css/cart.css" />
     <script src="assets/js/cart.js" defer></script>
+
 </head>
 
 <body bgcolor="#EEDCCB">
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="index.html">Запёк</a>
-                <div class="hamburger" id="hamburger">
-                    &#9776; <!-- Иконка гамбургера -->
-                </div>
                 <nav class="menu" id="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
@@ -51,24 +48,8 @@
         </div>
     </header>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
-
     <div class="product-list">
         <div class="pr-l-inner">
-            <!-- Добавьте эту кнопку для тестирования -->
-            <button onclick="testAddToCart()" style="padding: 10px; margin: 20px;">
-                Тест: Добавить товар
-            </button>
-            <button onclick="console.log(cart)" style="padding: 10px; margin: 20px;">
-                Тест: Показать корзину в консоли
-            </button>
         </div>
         <div class="total-pr">
             <hr>
@@ -77,7 +58,7 @@
             </div>
             <hr>
             <div class="contact-form">
-                <form>
+                <!-- <form>
                     <div class="form-field">
                         <label for="name" class="f-l-label">
                             <h3>Имя:</h3>
@@ -88,7 +69,7 @@
                         <label for="email" class="f-l-label">
                             <h3>Почта:</h3>
                         </label>
-                        <input type="email" name="email">
+                        <input type="email" id="customerEmail" name="email">
                     </div>
                     <div class="form-field">
                         <label for="phone" class="f-l-label">
@@ -112,13 +93,35 @@
                             <option>При получении</option>
                         </select>
                     </div>
-                    <button type="submit">Продолжить</button>
+                    <button type="submit" class="btn btn-primary">Подтвердить заказ</button>
+                </form> -->
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="customerName">Имя и Фамилия *</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail">Email *</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Телефон *</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+
+                    <!-- <button type="submit" class="btn btn-primary">Подтвердить заказ</button>
+                    <button type="button" id="cancelOrderBtn" class="btn btn-secondary">Отмена</button> -->
+                    <button id="checkoutBtn" class="checkout-btn" disabled>
+                        Оформить заказ
+                    </button>
                 </form>
             </div>
         </div>
     </div>
-
-
+    <!-- Подключение EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <footer class="footer">
         <hr style="border: 0; height: 2px; background-color: #443B33;">
@@ -182,23 +185,6 @@
             </li>
         </ul>
     </dialog>
-
-    <script>
-        // Функция для тестирования (можно удалить после отладки)
-        function testAddToCart() {
-            if (window.cartFunctions && window.cartFunctions.addToCart) {
-                window.cartFunctions.addToCart(
-                    'test1',
-                    'Тестовый товар',
-                    1000,
-                    2,
-                    'assets/images/test.jpg'
-                );
-            } else {
-                alert('Функция addToCart не найдена!');
-            }
-        }
-    </script>
 </body>
 
 </html>
